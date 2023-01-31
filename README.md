@@ -9,8 +9,8 @@
 
 ## In-Class Assignments
 ```
-- ICA1
-- ICA2
+- [ICA1](ICA/ica1.pdf)
+- [ICA2](ICA/ica2.pdf)
 - ICA3
 - ICA4
 - ICA5
@@ -29,8 +29,8 @@
 
 ## Weekly Assignments
 ```
-- WA1 (https://ajterio.github.io/wa/wa1.html)
-- WA2 (file:///C:/Users/13035/OneDrive/Desktop/AJTerio.github.io/wa/wa2.html)
+- [WA1](https://ajterio.github.io/wa/wa1.html)
+- [WA2](file:///C:/Users/13035/OneDrive/Desktop/AJTerio.github.io/wa/wa2.html)
 - WA3
 - WA4
 - WA5
