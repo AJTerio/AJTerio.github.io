@@ -9,8 +9,8 @@
 
 ## In-Class Assignments
 ```
-- [ICA1](ICA/ica1.pdf)
-- [ICA2](ICA/ica2.pdf)
+- [ICA1](ica/ica1.pdf)
+- [ICA2](ica/ica2.pdf)
 - ICA3
 - ICA4
 - ICA5
