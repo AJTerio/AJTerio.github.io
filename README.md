@@ -1,16 +1,13 @@
 # AJTerio.github.io
 
 ## Projects
-```
 - HTML
 - CSS
 - JS
-```
 
 ## In-Class Assignments
-```
-- [ICA1](ica/ica1.pdf)
-- [ICA2](ica/ica2.pdf)
+- [ICA1](https://ajterio.github.io/ica/ica1.pdf)
+- [ICA2](https://ajterio.github.io/ica/ica2.pdf)
 - ICA3
 - ICA4
 - ICA5
@@ -25,10 +22,8 @@
 - ICA13
 - ICA14
 - ICA15
-```
 
 ## Weekly Assignments
-```
 - [WA1](https://ajterio.github.io/wa/wa1.html)
 - [WA2](file:///C:/Users/13035/OneDrive/Desktop/AJTerio.github.io/wa/wa2.html)
 - WA3
@@ -44,4 +39,3 @@
 - WA13
 - WA14
 - WA15
-```
