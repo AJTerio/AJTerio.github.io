@@ -12,7 +12,7 @@
 - [ICA3-part1](https://ajterio.github.io/ica/ica3a.html)
 - [ICA3-part2](https://ajterio.github.io/ica/ica3-part2/index.html)
 - [ICA4](https://ajterio.github.io/ica/ica4.html)
-- ICA5
+- [ICA5](https://ajterio.github.io/ica/ica5.html)
 - ICA5
 - ICA6
 - ICA7
