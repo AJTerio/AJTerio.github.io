@@ -30,7 +30,7 @@
 - [WA2](https://ajterio.github.io/wa/wa2.html)
 - [WA3](https://ajterio.github.io/wa/wa3.html)
 - [WA4](https://ajterio.github.io/wa/wa4.html)
-- WA5
+- [WA5](https://ajterio.github.io/wa/wa4.html)
 - WA6
 - WA7
 - WA8
