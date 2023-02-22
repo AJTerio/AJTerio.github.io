@@ -1,0 +1,40 @@
+#narrowScreen{
+    background-color: green;
+}
+#wideScreen{
+    background-color: red;
+}
+#shortScreen{
+    background-color: turquoise;
+}
+#tallScreen{
+    background-color: lavender;
+}
+
+/* make me purple when the screen is narrower than 600px, else make me green */
+@media only screen and (max-width: 600px) {
+    #narrowScreen{
+        background-color: purple;
+    }
+}
+
+/* make me blue when the screen is wider than 800, else make me red */
+@media only screen and (min-width: 800px) {
+    #wideScreen{
+        background-color: rgb(37, 135, 255);
+    }
+}
+
+/* make me yellow when the screen is shorter than 500px, else make me turquoise */
+@media only screen and (max-height: 500px) {
+    #shortScreen{
+        background-color: yellow;
+    }
+}
+
+/* make me orange when the screen is taller than 800px, else make me lavender */
+@media only screen and (min-height: 800px) {
+    #tallScreen{
+        background-color: orange;
+    }
+}

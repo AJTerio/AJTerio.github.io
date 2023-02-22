@@ -1,0 +1,75 @@
+body{
+    background-color: olive;
+}
+
+
+#flex-parent{
+    display:flex;
+    background-color: orangered;
+    
+}
+#flex-parent p{
+    padding:5vw;
+}
+
+#flex-child1{
+    /* make flex-child4 first in the row */
+    order: 3;
+}
+
+#flex-child2{
+    /* make flex-child2 second in the row */
+    order: 4;
+}
+
+#flex-child3{
+    /* make flex-child3 third in the row */
+    order: 2;
+}
+
+#flex-child4{
+    /* make flex-child1 fourth in the row */
+    order: 1;
+}
+
+#grid-parent{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#grid-parent h1{
+    background-color: grey;
+    padding:3vw 5vh;
+    margin:5vw;
+    
+}
+#no0{
+
+}
+#no1{
+
+}
+#no2{
+    
+}
+#no3{
+
+}
+#no4{
+
+}
+#no5{
+
+}
+#no6{
+
+}
+#no7{
+
+}
+#no8{
+
+}
+#no9{
+
+}
