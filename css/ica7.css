@@ -1,0 +1,35 @@
+body{
+    background-color: khaki;
+}
+#box1{
+    width: 25vw;
+    height: 20vh;
+    background-color: indianred;
+}
+
+#box1:hover{
+    /*change the color of the box to purple*/
+    background-color: purple;
+}
+
+#box2{
+    width: 25vw;
+    height:20vh;
+    position: relative;
+    background-color: orangered;
+}
+
+#box2:hover{
+    /*move the box around the screen*/
+    animation: box2move 2s linear infinite;
+}
+
+/*animate box2 to move from left to right*/
+@keyframes box2move{
+    from {
+        left: 0;
+    }
+    to {
+        left: 100vw;
+    }
+}
