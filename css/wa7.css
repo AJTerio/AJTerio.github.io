@@ -1,0 +1,71 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 149, 12);
+    /* font-family: 'Papyrus', fantasy; */
+    font-family: 'Papyrus', fantasy;
+}
+
+nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 25px;
+    background-color: rgb(226, 43, 43);
+}
+
+nav a{
+    width:10vw;
+    text-align: center;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    /* font-family: 'Papyrus', fantasy; */
+    font-family: 'Papyrus', fantasy;
+}
+
+img{
+    width: 30vw;
+    height: 48vh;
+    margin-top: 2vh;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+#red-ball{
+    background-color: crimson;
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    position: absolute;
+    left:5vw;
+    top:0;
+
+    animation-name: bounce;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#red-ball:hover{
+    animation-play-state: paused;
+    /*make the ball grow at a slow transition*/
+    transition: width 1s, height 1s;
+    width: 30px;
+    height: 30px;
+}
+
+@keyframes bounce{
+    0%{
+        top:0;
+        background-color:rgb(0, 149, 12)
+    }
+    50%{
+        top: 100vh;
+        background-color: crimson;
+    }
+    100%{
+        top:0;
+    }
+}
