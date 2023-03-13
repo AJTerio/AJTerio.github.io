@@ -1,0 +1,269 @@
+/*main body shit*/
+body {
+    padding: 0;
+    font-family: 'Tilt Prism', cursive;
+    font-size: 1.5em;
+    font-weight: 900;
+    /*background color and borders*/
+    background-color: #fa752f;
+    background-image: linear-gradient(0deg, #fa752f 0%, #ffe498 100%);
+    /*make the image fit the page*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #FFDB78;
+    box-shadow:
+    inset 0 0 0 20px #B1693A,
+    inset 0 0 0 25px #C37340,
+    inset 0 0 0 30px #EB8C4D,
+    inset 0 0 0 35px #F0A058,
+    inset 0 0 0 40px #F5B463,
+    inset 0 0 0 45px #FAC86E;
+    margin: 0 auto;
+}
+
+/*grid to contain the images*/
+.container {
+    max-width: 60vw;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/*rows*/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+/*columns*/
+.col {
+    flex: 1;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*column images*/
+.col img {
+    display: block;
+    margin: 0 auto;
+    max-height: 30vh;
+    height: auto;
+    border: 5px solid #fff3bc;
+    border-radius: 5px;
+}
+
+/*text*/
+.textbox {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fa752f;
+    background-image: linear-gradient(0deg, #fa752f 0%, #ffe498 100%);
+    border: 5px solid #fff3bc;
+    border-radius: 5px;
+    line-height: 1.5;
+}
+
+/*navbar*/
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #fa752f;
+    background-image: linear-gradient(0deg, #fa752f 0%, #ffe498 100%);
+    color: #000000;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+/*navbar children*/
+.navbar a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/*navbar hover*/
+.navbar a:hover {
+    background-color: #fc8d1e;
+}
+
+/*projects page scroll features*/
+.CSSgal {
+    position: relative;
+    overflow: hidden;
+}
+
+/*box to contain the images*/
+.CSSgal .slider {
+    height: 100%;
+    white-space: nowrap;
+    font-size: 0;
+    transition: 0.8s;
+}
+
+/*all elements for slider and cssgal*/
+.CSSgal .slider > * {
+    font-size: 1rem;
+    display: inline-block;
+    white-space: normal;
+    vertical-align: top;
+    width: 100%;
+    background: none 50% no-repeat;
+    background-size: cover;
+}
+
+/*prevNext slider*/
+.CSSgal .prevNext {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    width: 100%;
+    height: 0;
+}
+
+.CSSgal .prevNext > div+div {
+    visibility: hidden; 
+}
+
+.CSSgal .prevNext a {
+    background: #fff;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    opacity: 0.7;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+}
+
+.CSSgal .prevNext a:hover {
+    opacity: 1;
+}
+
+.CSSgal .prevNext a+a {
+    left: auto;
+    right: 0;
+}
+
+.CSSgal >s:target ~ .bullets >* {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.CSSgal >s:target ~ .prevNext >* {
+    visibility: hidden;
+}
+
+#s1:target ~ .prevNext >*:nth-child(1) {
+    visibility: visible;
+}
+
+#s2:target ~ .prevNext >*:nth-child(2) {
+    visibility: visible;
+}
+
+#s3:target ~ .prevNext >*:nth-child(3) {
+    visibility: visible;
+}
+
+#s4:target ~ .prevNext >*:nth-child(4) {
+    visibility: visible;
+}
+
+#s1:target ~ .slider {
+    transform: translateX(   0%);
+    -webkit-transform: translateX(   0%);
+}
+
+#s2:target ~ .slider {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+}
+
+#s3:target ~ .slider {
+    transform: translateX(-200%);
+    -webkit-transform: translateX(-200%);
+}
+
+#s4:target ~ .slider {
+    transform: translateX(-300%);
+    -webkit-transform: translateX(-300%);
+}
+
+.CSSgal{
+    color: #fff;	
+    text-align: center;
+}
+
+.slide_text2{
+    color: black;
+}
+
+.CSSgal .slider h2 {
+    margin-top: 40vh;
+    font-weight: 200;
+    letter-spacing: -0.06em;
+    word-spacing: 0.2em;
+    font-size: 3em;
+}
+
+.CSSgal a {
+    border-radius: 50%;
+    margin: 0 3px;
+    color: rgba(0,0,0,0.8);
+    text-decoration: none;
+}
+
+.first_slide {
+    background: url('PortfolioStuff/board.jpg') !important;
+    background-size: contain !important;
+}
+
+.second_slide {
+    background-image: url('PortfolioStuff/luffyzoro.png') !important;
+    background-size: contain !important;
+}
+
+.third_slide {
+    background-image: url('PortfolioStuff/lsd1-2.jpg') !important;
+    background-size: contain !important;
+}
+
+.fourth_slide {
+    background-image: url('PortfolioStuff/BeatlesBoys_gif.gif') !important;
+    background-size: contain !important;
+}
+
+.spedImage {
+    display: flex;
+    align-items: center;
+}
+
+#projects {
+    display: none;
+}
+
+#contacts {
+    display: none;
+}
+
+#about {
+    display: none;
+}
+
+#resume {
+    display: none;
+}

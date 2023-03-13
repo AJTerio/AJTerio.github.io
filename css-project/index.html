@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AJs Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./cssproject2.css">
+</head>
+<body>
+    <!--Main container for items on page-->
+	<div class="container">
+        <!--Row Flexbox-->
+		<div class="row">
+            <!--Column Flexbox-->
+			<div class="col">
+				<img src="PortfolioStuff/name1.png" alt="Image 1">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+                <!--First Image-->
+				<img src="PortfolioStuff/bg1.jpg" alt="Me on rock">
+			</div>
+			<div class="col">
+                <!--Second Image-->
+				<img src="PortfolioStuff/AJ.jpg" alt="AJprofile" class="spedImage">
+			</div>
+			<div class="col">
+                <!--Third Image-->
+				<img src="PortfolioStuff/img3.jpg" alt="Me hold Ash">
+			</div>
+		</div>
+
+        <!--Big Content Box-->
+        <!--Projects-->
+        <div class="row" id="projects">
+            <div class="col">
+                <div class="textbox bigger-box">
+                    <center>
+                    <h2>Projects</h2>
+                    </center>
+                    <div class="CSSgal">
+
+                        <s id="s1"></s> 
+                        <s id="s2"></s>
+                        <s id="s3"></s>
+                        <s id="s4"></s>
+                      
+                        <div class="slider">
+                            <div class="first_slide">
+                                <h2 class="slide_text1">Snowboard</h2>
+                            </div>
+                            <div class="second_slide">
+                                <h2 class="slide_text2">Shoes</h2>
+                            </div>
+                            <div class="third_slide">
+                                <h2 class="slide_text3">Photoshop</h2>
+                              </div>
+                            <div class="fourth_slide">
+                                <h2 class="slide_text4">Animation</h2>
+                            </div>
+                        </div>
+
+                        <div class="prevNext">
+                            <div><a href="#s4"></a><a href="#s2"></a></div>
+                            <div><a href="#s1"></a><a href="#s3"></a></div>
+                            <div><a href="#s2"></a><a href="#s4"></a></div>
+                            <div><a href="#s3"></a><a href="#s1"></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Home-->
+        <div class="row" id="home">
+            <div class="col">
+                <div class="textbox">
+                    <center>
+                    <h2>Home</h2>
+                    </center>
+                    <p>My name is AJ Terio and I am currently a 2nd year undergraduate student studying Creative Technology and Design at CU Boulder.</p>
+                    <p>I enjoy working on interactive creative projects, both digital and physical. As I've been integrating new technologies and techniques into my skill set, I've had so much fun pouring passion into each of these fulfilling projects</p>
+                    <p>Currently working with the following software: Adobe Photoshop 2023, Adobe Lightroom, SketchUp Pro 2022, & Visual Studio code</p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <!--About-->
+        <div class="row" id="about">
+            <div class="col">
+                <div class="textbox">
+                    <center>
+                    <h2>About</h2>
+                    </center>
+                    <p>I'm currently looking for work in Boulder, Colorado over the 2023 Summer term. Interested in internships.</p>
+                    <p>I know a handful of computer science languages and I'm mostly best with python.</p>
+                    <p>I love animation as well and will be updating this website as I make more progress on finals and other projects.</p>
+                </div>
+            </div>
+        </div>
+        <!--Contact-->
+        <div class="row" id="contacts">
+            <div class="col">
+                <div class="textbox">
+                    <center>
+                    <h2>Contact</h2>
+                    <p>Phone: 303-550-8906</p>
+                    <p>Email:
+                        <a href="mailto:ajterio@gmail.com">
+                            ajterio@gmail.com
+                    </a></p>
+                    </center>
+                </div>
+            </div>
+        </div>
+        <!--Resume-->
+        <div class="row" id="resume">
+            <div class="col">
+                <div class="textbox">
+                    <h2>Resume</h2>
+                    <p>LinkEDin</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!--Navbar onclick href links-->
+            <div class="navbar">
+                <a href="#" onclick="makeElementVisible('home')">Home</a>
+                <a href="#" onclick="makeElementVisible('about')">About</a>
+                <a href="#" onclick="makeElementVisible('projects')">Projects</a>
+                <a href="#" onclick="makeElementVisible('contacts')">Contact</a>
+                <a href="#" onclick="makeElementVisible('resume')">Resume</a>
+            </div>
+        </div>
+	</div>
+    <!--Script for making elements visible-->
+	<script>
+        let myTabs = ["projects", "contacts", "home", "about", "resume"]
+
+        function makeElementVisible(elementID) {
+            for (let i = 0; i < myTabs.length; i++) {
+                makeElementHidden(myTabs[i]);
+            }
+            let element = document.getElementById(elementID);
+            element.style.display = "block";
+        }
+
+        function makeElementHidden(elementID) {
+            let element = document.getElementById(elementID);
+            element.style.display = "none";
+        }
+    </script>
+</body>
+</html>

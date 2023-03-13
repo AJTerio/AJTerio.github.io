@@ -1,0 +1,111 @@
+html{
+    /*border and colors*/
+    background-color: #FFDB78;
+    box-shadow:
+      inset 0 0 0 20px #B1693A,
+      inset 0 0 0 25px #C37340,
+      inset 0 0 0 30px #EB8C4D,
+      inset 0 0 0 35px #F0A058,
+      inset 0 0 0 40px #F5B463,
+      inset 0 0 0 45px #FAC86E;
+    margin: 0 auto;
+    padding: 3em;
+    color: #000000;
+    /*alignment for body*/
+    align-items: center;
+    font-family: 'Climate Crisis', cursive;
+}
+
+.grid{
+    display: grid;
+    /*dimensions + borders*/
+    margin: 40px auto;
+    margin-left: 30px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+}
+
+.name{
+    /*colors*/
+    background-color: #B1693A;
+    /*dimensions + borders*/
+    width: 450px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+#name1{
+    /*dimensions*/
+    max-width: 450px;
+}
+
+.profile{
+    /*dimensions + borders*/
+    width: 330px;
+    height: 340px;
+    margin: center;
+    right: 600px;
+    border: 10px solid #B1693A;
+    /*alignment*/
+}
+
+nav{
+    display: flex;
+    /*dimensions + borders*/
+    max-height: 90px;
+    justify-content: space-evenly;
+}
+
+nav a{
+    /*font + color*/
+    background-color: #fff0c5;
+    color: #002D36;
+    text-align: center;
+    font-size: 1.5em;
+    /*dimensions and borders*/
+    border: 2px solid #002D36;
+    padding: 1em;
+}
+
+.description h1{
+    /*font + color*/
+    color: #002D36;
+    font-size: 1.5em;
+    /*alignment*/
+    text-align: start;
+    /*dimensions + borders*/
+}
+
+#home:hover{
+    background-color: #002D36;
+    color: #ffffff;
+}
+
+#about:hover{
+    background-color: #002D36;
+    color: #ffffff;
+}
+
+#projects:hover{
+    background-color: #002D36;
+    color: #ffffff;
+}
+
+#contacts:hover{
+    background-color: #002D36;
+    color: #ffffff;
+}
+
+#resume:hover{
+    background-color: #002D36;
+    color: #ffffff;
+}
+
+ /*media queries for different screen sizes*/
+ @media only screen and (max-width: 500px) 
+ {
+    .grid{
+         grid-template-columns: 1fr;
+    }
+ }

@@ -1,0 +1,72 @@
+body{
+    /*background color and borders*/
+    background-color: #fa752f;
+    background-image: linear-gradient(0deg, #fa752f 0%, #ffe498 100%);
+    /*make the image fit the page*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*alignment*/
+    align-items: center;
+    /*font*/
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: minmax(300px, auto) minmax(300px, auto);
+    grid-template-areas: ". . name name . ."
+                         "img1 img1 img2 img2 img3 img3"
+                         "big big big big big big"
+                         "nav nav nav nav nav nav";
+    /*alignment and borders*/
+    grid-gap: 30px 30px;
+    margin: 20px 30px;
+}
+
+.grid1-name{
+    /*background img size and borders*/
+    grid-area: name;
+    /*background: url(PortfolioStuff/name.png);
+    background-size: cover;*/
+}
+
+.grid2-img1{
+    grid-area: img1;
+    background: url(PortfolioStuff/bg1.jpg);
+    background-size: cover;
+}
+
+.grid3-img2{
+    grid-area: img2;
+    background: url(PortfolioStuff/AJ.jpg);
+    background-size: cover;
+}
+
+.grid4-img3{
+    grid-area: img3;
+    background: url(PortfolioStuff/img3.jpg);
+    background-size: cover;
+}
+
+.grid5-bigcontent{
+    grid-area: big;
+    /*background color and borders*/
+    background-color: #fa752f;
+    background-image: linear-gradient(0deg,ujj #fa752f 0%, #ffe498 100%);
+    /*10px thick border*/
+    border: 10px solid #000000;
+    /*alignment*/
+
+}
+
+.grid6-nav{
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /*background color and borders*/
+    background-color: #fa752f;
+    background-image: linear-gradient(0deg, #fa752f 0%, #ffe498 100%);
+}
