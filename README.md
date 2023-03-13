@@ -2,7 +2,7 @@
 
 ## Projects
 - HTML
--[html](https://ajterio.github.io/html-midterm/page5.html)
+- [html](https://ajterio.github.io/html-midterm/page5.html)
 - [CSS](https://ajterio.github.io/css-project/index.html)
 - JS
 
