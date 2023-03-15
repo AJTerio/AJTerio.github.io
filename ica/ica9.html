@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(96, 22, 139);
+        }
+        #button {
+            border: 8px solid rgb(96, 22, 139);
+            border-radius: 20px;
+            background-color: rgb(255, 115, 255);
+            color:rgb(96, 22, 139);
+            padding: 20px 50px;
+            width: 250px;
+            text-align: center;
+            font-size: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div id = "button">
+        <p>Click me!</p>
+    </div>
+    <img src = "../img/Donkey.jpg" alt = "Donkey" id = "donkey">
+
+    <script>
+        console.log("Hello World");
+        let button = document.querySelector("#button");
+        //console.log(button);
+        button.addEventListener("click", function(){
+            button.textContent = "You clicked me!";
+            button.style.backgroundColor = "rgb(96, 22, 139)";
+            button.style.color = "rgb(255, 115, 255)";
+            button.style.border = "8px solid rgb(255, 115, 255)";
+            //move the button to a random location
+            let x = Math.floor(Math.random() * window.innerWidth-100);
+            let y = Math.floor(Math.random() * window.innerHeight-100);
+            button.style.position = "absolute";
+            button.style.left = x + "px";
+            button.style.top = y + "px";
+            //add another button
+            let newButton = document.createElement("button");
+            newButton.textContent = "Click me!";
+            newButton.style.backgroundColor = "rgb(255, 115, 255)";
+            newButton.style.color = "rgb(96, 22, 139)";
+            newButton.style.border = "8px solid rgb(96, 22, 139)";
+            newButton.style.borderRadius = "20px";
+            newButton.style.padding = "20px 50px";
+            newButton.style.width = "250px";
+            newButton.style.textAlign = "center";
+            newButton.style.fontSize = "60px";
+            newButton.style.position = "absolute";
+            newButton.style.left = "50%";
+            newButton.style.top = "50%";
+            document.body.appendChild(newButton);
+            //when the new button is clicked, it will change to the new text
+            newButton.addEventListener("click", function(){
+                newButton.textContent = "You clicked me!";
+                newButton.style.backgroundColor = "rgb(96, 22, 139)";
+                newButton.style.color = "rgb(255, 115, 255)";
+                newButton.style.border = "8px solid rgb(255, 115, 255)";
+                //move the button to a random location
+                let x = Math.floor(Math.random() * window.innerWidth);
+                let y = Math.floor(Math.random() * window.innerHeight);
+                newButton.style.position = "absolute";
+                newButton.style.left = x + "px";
+                newButton.style.top = y + "px";
+            });
+
+        });
+        //when the buttom is clicked on even numbers, it will change back to the original
+        //when the button is clicked on odd numbers, it will change to the new text
+        let count = 0;
+        button.addEventListener("click", function(){
+            count++;
+            if (count % 2 == 0){
+                button.textContent = "Click me!";
+                button.style.backgroundColor = "rgb(255, 115, 255)";
+                button.style.color = "rgb(96, 22, 139)";
+                button.style.border = "8px solid rgb(96, 22, 139)";
+                //move the button to a random location
+                let x = Math.floor(Math.random() * window.innerWidth);
+                let y = Math.floor(Math.random() * window.innerHeight);
+                button.style.position = "absolute";
+                button.style.left = x + "px";
+                button.style.top = y + "px";
+                //add another button
+                let newButton = document.createElement("button");
+                newButton.textContent = "Click me!";
+                newButton.style.backgroundColor = "rgb(255, 115, 255)";
+                newButton.style.color = "rgb(96, 22, 139)";
+                newButton.style.border = "8px solid rgb(96, 22, 139)";
+                newButton.style.borderRadius = "20px";
+                newButton.style.padding = "20px 50px";
+                newButton.style.width = "250px";
+                newButton.style.textAlign = "center";
+                newButton.style.fontSize = "60px";
+                newButton.style.position = "absolute";
+                newButton.style.left = "50%";
+                newButton.style.top = "50%";
+                document.body.appendChild(newButton);
+                //when the new button is clicked, it will change to the new text
+                newButton.addEventListener("click", function(){
+                    newButton.textContent = "Click me!";
+                    newButton.style.backgroundColor = "rgb(96, 22, 139)";
+                    newButton.style.color = "rgb(255, 115, 255)";
+                    newButton.style.border = "8px solid rgb(255, 115, 255)";
+                    //move the button to a random location
+                    let x = Math.floor(Math.random() * window.innerWidth);
+                    let y = Math.floor(Math.random() * window.innerHeight);
+                    newButton.style.position = "absolute";
+                    newButton.style.left = x + "px";
+                    newButton.style.top = y + "px";
+                })
+            };
+        })
+        let donkey = document.querySelector("#donkey");
+        //console.log(button);
+        donkey.addEventListener("click", function(){
+            //rotate the donkey
+            donkey.style.transform = "rotate(180deg)";
+        });
+        
+        //or function clickHandler(){
+        //console.log("You clicked me!");
+        //});
+        //button.addEventListener("click", function();
+        
+    </script>
+</body>
+</html>

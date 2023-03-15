@@ -247,6 +247,11 @@ body {
     background-size: contain !important;
 }
 
+.fifth_slide {
+    background-image: url('PortfolioStuff/soul.jpg') !important;
+    background-size: contain !important;
+}
+
 .spedImage {
     display: flex;
     align-items: center;
