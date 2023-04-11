@@ -39,16 +39,17 @@
       for(let i = 0; i < catString.length-1; i++){
         motherInfo += 'and ' + catString[i]['name'] + ', ';
         total += catString[i]['kittens'].length;
-        for (let j = 0; j < 3; j++)
-            if (catString[i]['kittens'][j]['gender'] == 'm'){
+        for(let j = 0; j < catString[i]['kittens'].length; j++){
+            if(catString[i]['kittens'][j]['gender'] == 'm'){
                 male += 1;
             }
+        }
       }
       motherInfo += 'and ' + catString[catString.length-1]['name'] + '.';
       total += catString[catString.length-1]['kittens'].length;
       kittenInfo = 'The total number of kittens is ' + total + '. ';
-      kittenInfo = 'The total number of male kittens is ' + male + '. ';
-      kittenInfo += ''
+      kittenInfo += 'The total number of male kittens is ' + male + '. ';
+      kittenInfo += 'The total number of female kittens is ' + (total - male) + '. ';
       // Don't edit the code below here!
       para1.textContent = motherInfo;
       para2.textContent = kittenInfo;
