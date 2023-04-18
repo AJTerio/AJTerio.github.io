@@ -38,6 +38,6 @@
 - [WA10](https://ajterio.github.io/wa/wa10.html)
 - [WA11](https://ajterio.github.io/wa/wa11.html)
 - [WA12](https://ajterio.github.io/wa/wa12.html)
-- WA13
+- [WA13](https://ajterio.github.io/wa/wa13/wa13.html)
 - WA14
 - WA15
