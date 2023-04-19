@@ -4,12 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bad Volume</title>
 
     <link rel="stylesheet" href="wa13.css">
     <script defer src="wa13.js"></script>
 </head>
 <body>
-
+    <div> <!--output-->
+        <p>Bababba volume aagagaga fiff</p>
+        <p class="output">50</p>
+    </div>
+    <div> <!--plus/minus volume-->
+        <form>
+            <input class="minus-button" type="button" name="minus-button" value="MINUS"></input>
+            <input class="plus-button" type="button" name="plus-button" value="PLUS"></input>
+            <input class="reset-button" type="button" name="reset-button" value="RESET"></input>
+            <input class="random-button" type="button" name="random" value="RANDOM"></input>
+            <input class="submit-button" type="submit" name="submit" value="SUBMIT"></input>
+        </form>
+    </div>
+    <div> <!--slider-->
+        <div class="slidecontainer">
+            <p>Please select the volume u might want or might not want</p>
+            <input type="range" min="0" max="100" value="50" class="slider" id="myRange"></input>
+            <input class="slider-submit-button" type="button" name="slider-submit-button"></input>
+            <p class="slider-output"></p>
+        </div>
+    </div>
 </body>
 </html>

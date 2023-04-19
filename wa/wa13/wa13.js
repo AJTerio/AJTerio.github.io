@@ -1,18 +1,20 @@
-
-
+// check function
 function check() {
     console.log('test');
 }
 
+//submit function
 function submit() {
-    alert(output.textContent);
+    alert('Woaahhh ur volume is now ' + output.textContent + '! Great job?');
 }
 
+// reset function
 function reset() {
     outputInt = 0;
     output.textContent = outputInt;
 }
 
+// minus function
 function minus() {
     if (outputInt > 0) {
     outputInt -=1;
@@ -20,6 +22,7 @@ function minus() {
     
 }
 
+// plus function
 function plus() {
     if (outputInt < 100) {
     outputInt +=1;
@@ -27,28 +30,29 @@ function plus() {
     }
 }
 
+// random function 0-100
 function random() {
     outputInt = randomNumber(0, 100);
     output.textContent = outputInt;
 }
 
+// random function custom
 function randomNumber(min, max) {
     const num = Math.floor(Math.random() * (max - min + 1)) + min;
     return num;
   }
 
-
-
+// output
 const output = document.querySelector('.output');
 let outputInt = parseInt(output.textContent);
 console.log(outputInt);
 
+// buttons
 const minusButton = document.querySelector('.minus-button').addEventListener('click', minus);
 const plusButton = document.querySelector('.plus-button').addEventListener('click', plus);
 const resetButton = document.querySelector('.reset-button').addEventListener('click', reset);
 const randomButton = document.querySelector('.random-button').addEventListener('click', random);
 const submitButton = document.querySelector('.submit-button').addEventListener('click', submit);
-
 
 /* const button = document.querySelector('.button');
 const output = document.querySelector('.output');
@@ -60,7 +64,7 @@ function updateOutput() {
 }
 */
 
-
+// slider
 var slider = document.getElementById("myRange");
 var sliderSubmit = document.querySelector(".slider-submit-button").addEventListener('click', update);
 var sliderOutput = document.querySelector(".slider-output");
