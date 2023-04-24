@@ -73,8 +73,8 @@ class Ball {
 }
 
 const balls = [];
-while (balls.length < 200) {
-    const size = random(30, 100);
+while (balls.length < 50) {
+    const size = random(30, 80);
     const ball = new Ball(
         // ball position always drawn at least one ball width
         // away from the edge of the canvas, to avoid drawing errors

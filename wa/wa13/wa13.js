@@ -3,7 +3,7 @@ function check() {
     console.log('test');
 }
 
-//submit function
+// submit function
 function submit() {
     alert('Woaahhh ur volume is now ' + output.textContent + '! Great job?');
 }
@@ -18,8 +18,8 @@ function reset() {
 function minus() {
     if (outputInt > 0) {
     outputInt -=1;
-    output.textContent = outputInt; }
-    
+    output.textContent = outputInt; 
+    }
 }
 
 // plus function
@@ -42,35 +42,35 @@ function randomNumber(min, max) {
     return num;
   }
 
-// output
-const output = document.querySelector('.output');
-let outputInt = parseInt(output.textContent);
-console.log(outputInt);
+// // output
+// const output = document.querySelector('.output');
+// let outputInt = parseInt(output.textContent);
+// console.log(outputInt);
+
+//count instantiation
+let clicks = 0;
+
+// mash function
+function mash() {
+    console.log("mash");
+    if(clicks == 0) {
+        setTimeout(ending, 5000);
+    }
+    clicks++;
+}
+
+// ending function
+function ending() {
+    console.log("ending");
+    clickCount.textContent = clicks.toString();
+    clicks = 0;
+}
+
 
 // buttons
-const minusButton = document.querySelector('.minus-button').addEventListener('click', minus);
-const plusButton = document.querySelector('.plus-button').addEventListener('click', plus);
-const resetButton = document.querySelector('.reset-button').addEventListener('click', reset);
-const randomButton = document.querySelector('.random-button').addEventListener('click', random);
-const submitButton = document.querySelector('.submit-button').addEventListener('click', submit);
-
-/* const button = document.querySelector('.button');
-const output = document.querySelector('.output');
-let phone_content = document.querySelector('.phone');
-button.addEventListener('click', updateOutput);
-function updateOutput() {
-    output.textContent = phone_content.value;
-    alert(phone_content.value);
-}
-*/
-
-// slider
-var slider = document.getElementById("myRange");
-var sliderSubmit = document.querySelector(".slider-submit-button").addEventListener('click', update);
-var sliderOutput = document.querySelector(".slider-output");
-
-
-// Update the current slider value (each time you drag the slider handle)
-function update() {
-  sliderOutput.textContent = slider.value;
-}
+// const minusButton = document.querySelector('.minus-button').addEventListener('click', minus);
+// const plusButton = document.querySelector('.plus-button').addEventListener('click', plus);
+// const resetButton = document.querySelector('.reset-button').addEventListener('click', reset);
+// const randomButton = document.querySelector('.random-button').addEventListener('click', random);
+// const submitButton = document.querySelector('.submit-button').addEventListener('click', submit);
+const mashButton = document.querySelector('.mash-button').addEventListener('click', mash);
