@@ -1,0 +1,14 @@
+AJ Terio
+Web
+JS Final Project
+5/9/23
+
+Project Description:
+    For my final project I decided to make a website to display my art and the projects I have been and will be working on in the future
+    I wanted to make a website that was simple and easy to navigate and easy to update and add to as well. I used css animations, transitions, and
+    keyframe animations to make the website more interesting and interactive. The javascript elements I used involved manipulating the event
+    liseter that targeted the scroll bar. I made the scroll bar animated and added a paralax effect to background and foreground images
+    at the top of the page. I'd like to implement more javascript elements in the future as I add to this website overtime to make the website 
+    more interactive and interesting. I'd like to give credit to OnlineTutorials4Designers (https://www.youtube.com/c/OnlineTutorials4Designers)
+    for helping me learn how to make the scroll bar animated and paralax effect. 
+    

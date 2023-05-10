@@ -3,7 +3,7 @@
 ## Projects
 - [HTML](https://ajterio.github.io/html-midterm/page5.html)
 - [CSS](https://ajterio.github.io/css-project/index.html)
-- JS
+- [JS](https://ajterio.github.io/js-final/index.html)
 
 ## In-Class Assignments
 - [ICA1](https://ajterio.github.io/ica/ica1.pdf)
