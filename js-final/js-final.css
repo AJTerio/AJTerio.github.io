@@ -20,7 +20,7 @@ h3{
     position: relative;
     text-align: center;
 }
-p{
+#header{
     font-size: 0.8em;
     color: #fff;
     margin: 20px 0;
@@ -152,6 +152,7 @@ nav{
     scale: 1.1;
 }
 .container .card .content{
+    font-size: 0.5em;
     text-align: center;
     transition: 0.5s;
     opacity: 0;
